@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #87CEEB, #4682B4); /* Sky gradient */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+/* Form Styling */
+.weatherForm {
+    margin-bottom: 20px;
+}
+
+.cityInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+    text-align:center
+}
+
+.cityInput:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #00bcd4;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0288d1;
+    transform: scale(1.05);
+}
+
+/* Card Styling */
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.cityDisplay {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tempDisplay {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff5722;
+}
+
+.humidityDisplay,
+.descDisplay,
+.weatherDisplay,
+.errorDisplay {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .cityInput,
+    button {
+        width: 100%;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
